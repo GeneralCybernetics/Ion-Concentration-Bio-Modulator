@@ -3283,7 +3283,7 @@
 				)
 			)
 		)
-		(symbol "Regulator_Switching:LM2576HVS-3.3"
+		(symbol "Regulator_Linear:LM1084-3.3"
 			(pin_names
 				(offset 0.254)
 			)
@@ -3291,7 +3291,15 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at -10.16 6.35 0)
+				(at -3.81 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LM1084-3.3"
+				(at 0 3.175 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3299,27 +3307,17 @@
 					(justify left)
 				)
 			)
-			(property "Value" "LM2576HVS-3.3"
+			(property "Footprint" ""
 				(at 0 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:TO-263-5_TabPin3"
-				(at 0 -6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 						(italic yes)
 					)
-					(justify left)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2576.pdf"
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm1084.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3328,7 +3326,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "3.3V, 3A, SIMPLE SWITCHER® Step-Down Voltage Regulator, High Voltage Input, TO-263"
+			(property "Description" "5A 27V Linear Regulator, Fixed Output 3.3V, TO-220/TO-263"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3337,7 +3335,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "Step-Down Voltage Regulator 3.3V 3A High Voltage"
+			(property "ki_keywords" "Voltage Regulator Fixed 5A Positive"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3346,7 +3344,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "TO?263*"
+			(property "ki_fp_filters" "TO?220* TO?263*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3355,10 +3353,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "LM2576HVS-3.3_0_1"
+			(symbol "LM1084-3.3_0_1"
 				(rectangle
-					(start -10.16 5.08)
-					(end 10.16 -5.08)
+					(start -5.08 1.905)
+					(end 5.08 -5.08)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -3368,11 +3366,11 @@
 					)
 				)
 			)
-			(symbol "LM2576HVS-3.3_1_1"
+			(symbol "LM1084-3.3_1_1"
 				(pin power_in line
-					(at -12.7 2.54 0)
+					(at 0 -7.62 90)
 					(length 2.54)
-					(name "VIN"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3387,10 +3385,10 @@
 						)
 					)
 				)
-				(pin output line
-					(at 12.7 -2.54 180)
+				(pin power_out line
+					(at 7.62 0 180)
 					(length 2.54)
-					(name "OUT"
+					(name "VO"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3406,9 +3404,9 @@
 					)
 				)
 				(pin power_in line
-					(at 0 -7.62 90)
+					(at -7.62 0 0)
 					(length 2.54)
-					(name "GND"
+					(name "VI"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3416,42 +3414,6 @@
 						)
 					)
 					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 12.7 2.54 180)
-					(length 2.54)
-					(name "FB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -12.7 -2.54 0)
-					(length 2.54)
-					(name "~{ON}/OFF"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3461,7 +3423,7 @@
 				)
 			)
 		)
-		(symbol "Regulator_Switching:LM2576HVS-5"
+		(symbol "Regulator_Linear:LM1084-5.0"
 			(pin_names
 				(offset 0.254)
 			)
@@ -3469,7 +3431,15 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at -10.16 6.35 0)
+				(at -3.81 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LM1084-5.0"
+				(at 0 3.175 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3477,27 +3447,17 @@
 					(justify left)
 				)
 			)
-			(property "Value" "LM2576HVS-5"
+			(property "Footprint" ""
 				(at 0 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:TO-263-5_TabPin3"
-				(at 0 -6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 						(italic yes)
 					)
-					(justify left)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2576.pdf"
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm1084.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3506,7 +3466,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "5V 3A, SIMPLE SWITCHER® Step-Down Voltage Regulator, High Voltage Input, TO-263"
+			(property "Description" "5A 27V Linear Regulator, Fixed Output 5.0V, TO-220/TO-263"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3515,7 +3475,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "Step-Down Voltage Regulator 5V 3A High Voltage"
+			(property "ki_keywords" "Voltage Regulator 5A Positive"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3524,7 +3484,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "TO?263*"
+			(property "ki_fp_filters" "TO?220* TO?263*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3533,10 +3493,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "LM2576HVS-5_0_1"
+			(symbol "LM1084-5.0_0_1"
 				(rectangle
-					(start -10.16 5.08)
-					(end 10.16 -5.08)
+					(start -5.08 1.905)
+					(end 5.08 -5.08)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -3546,11 +3506,11 @@
 					)
 				)
 			)
-			(symbol "LM2576HVS-5_1_1"
+			(symbol "LM1084-5.0_1_1"
 				(pin power_in line
-					(at -12.7 2.54 0)
+					(at 0 -7.62 90)
 					(length 2.54)
-					(name "VIN"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3565,10 +3525,10 @@
 						)
 					)
 				)
-				(pin output line
-					(at 12.7 -2.54 180)
+				(pin power_out line
+					(at 7.62 0 180)
 					(length 2.54)
-					(name "OUT"
+					(name "VO"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3584,9 +3544,9 @@
 					)
 				)
 				(pin power_in line
-					(at 0 -7.62 90)
+					(at -7.62 0 0)
 					(length 2.54)
-					(name "GND"
+					(name "VI"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3594,42 +3554,6 @@
 						)
 					)
 					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 12.7 2.54 180)
-					(length 2.54)
-					(name "FB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -12.7 -2.54 0)
-					(length 2.54)
-					(name "~{ON}/OFF"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6164,6 +6088,12 @@
 		(uuid "127eeb3d-6076-4238-9c1c-ff1782942c56")
 	)
 	(junction
+		(at 48.26 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1435af7c-35ea-4c8c-bc9c-77c9c4d1dc5b")
+	)
+	(junction
 		(at 101.6 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6236,12 +6166,6 @@
 		(uuid "8d55cfe6-6141-4d47-9c7b-faddf723a15c")
 	)
 	(junction
-		(at 234.95 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "90134437-57ae-497a-8c5b-c7ac7e80fdad")
-	)
-	(junction
 		(at 31.75 24.13)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6284,10 +6208,22 @@
 		(uuid "b16b9141-2fd6-4b80-80d7-95726be6a6b2")
 	)
 	(junction
+		(at 36.83 31.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b72bafb0-a508-476e-9874-50182aa88fd1")
+	)
+	(junction
 		(at 127 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ba5d8298-079a-4954-aaac-8e259599bbd3")
+	)
+	(junction
+		(at 48.26 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c4d93757-d65d-42a0-940c-bb4999a1eda3")
 	)
 	(junction
 		(at 64.77 143.51)
@@ -6434,10 +6370,6 @@
 		(uuid "a053317c-fe91-414c-8fbb-09ecc81d36c1")
 	)
 	(no_connect
-		(at 234.95 55.88)
-		(uuid "a63caa38-291a-417b-a34c-508a58c462a5")
-	)
-	(no_connect
 		(at 255.27 85.09)
 		(uuid "a98e1208-282b-4c6c-bbda-14f305f802c5")
 	)
@@ -6535,7 +6467,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 57.15) (xy 35.56 57.15)
+			(xy 36.83 57.15) (xy 40.64 57.15)
 		)
 		(stroke
 			(width 0)
@@ -6625,16 +6557,6 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 36.83) (xy 36.83 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "078d7df8-a1b9-45c1-94e5-16fa93980501")
-	)
-	(wire
-		(pts
 			(xy 21.59 156.21) (xy 21.59 165.1)
 		)
 		(stroke
@@ -6682,16 +6604,6 @@
 			(type default)
 		)
 		(uuid "0a9fdd0e-8298-43f4-9b73-552c1096a073")
-	)
-	(wire
-		(pts
-			(xy 76.2 21.59) (xy 63.5 21.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0be5a080-6330-4bc9-bc18-e3117616886f")
 	)
 	(wire
 		(pts
@@ -6865,16 +6777,6 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 43.18) (xy 234.95 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "23d5fe2b-3929-45b4-a477-5e06c063ac27")
-	)
-	(wire
-		(pts
 			(xy 82.55 152.4) (xy 82.55 146.05)
 		)
 		(stroke
@@ -6895,6 +6797,16 @@
 	)
 	(wire
 		(pts
+			(xy 36.83 31.75) (xy 40.64 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a0742fd-44d2-4326-ad64-3b9d02d3f3c0")
+	)
+	(wire
+		(pts
 			(xy 161.29 59.69) (xy 161.29 57.15)
 		)
 		(stroke
@@ -6902,16 +6814,6 @@
 			(type default)
 		)
 		(uuid "2a7e78ee-c81d-4171-a763-a7a153d7d506")
-	)
-	(wire
-		(pts
-			(xy 34.29 63.5) (xy 34.29 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2b344c82-7bc9-4d61-bf68-9d4917730800")
 	)
 	(wire
 		(pts
@@ -6932,16 +6834,6 @@
 			(type default)
 		)
 		(uuid "2d2484da-4aa9-4383-9707-bd2343f732d6")
-	)
-	(wire
-		(pts
-			(xy 48.26 41.91) (xy 48.26 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2d54874a-281e-46e8-b771-f03226003c87")
 	)
 	(wire
 		(pts
@@ -6995,16 +6887,6 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 41.91) (xy 49.53 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "335f9c9b-ed2b-4660-85e7-fb7d2f42bbe8")
-	)
-	(wire
-		(pts
 			(xy 243.84 80.01) (xy 255.27 80.01)
 		)
 		(stroke
@@ -7012,16 +6894,6 @@
 			(type default)
 		)
 		(uuid "351b097b-e936-4623-85a4-685aa66b6507")
-	)
-	(wire
-		(pts
-			(xy 214.63 48.26) (xy 234.95 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "353e87e9-0df5-4380-adfd-3cb4bb7b627e")
 	)
 	(wire
 		(pts
@@ -7135,37 +7007,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 21.59) (xy 63.5 22.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4087a840-178d-4d94-bec4-6384742f9b6b")
-	)
-	(wire
-		(pts
-			(xy 223.52 53.34) (xy 234.95 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "416f3440-0e5c-4c89-9389-651890dd2a47")
-	)
-	(wire
-		(pts
-			(xy 220.98 50.8) (xy 234.95 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "42f211b4-b39b-4fb9-b5c2-7d4b7fad1f37")
-	)
-	(wire
-		(pts
-			(xy 62.23 36.83) (xy 67.31 36.83)
+			(xy 55.88 31.75) (xy 60.96 31.75)
 		)
 		(stroke
 			(width 0)
@@ -7375,16 +7217,6 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 58.42) (xy 234.95 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "59af580f-4508-41d1-b2da-f3a86addec42")
-	)
-	(wire
-		(pts
 			(xy 45.72 190.5) (xy 21.59 190.5)
 		)
 		(stroke
@@ -7415,6 +7247,16 @@
 	)
 	(wire
 		(pts
+			(xy 31.75 31.75) (xy 36.83 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6409d540-1021-4cd8-b0d7-406f8c5be413")
+	)
+	(wire
+		(pts
 			(xy 128.27 123.19) (xy 128.27 125.73)
 		)
 		(stroke
@@ -7435,16 +7277,6 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 58.42) (xy 234.95 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "67a04879-5487-444f-af29-2d3718b97b74")
-	)
-	(wire
-		(pts
 			(xy 158.75 43.18) (xy 158.75 40.64)
 		)
 		(stroke
@@ -7452,16 +7284,6 @@
 			(type default)
 		)
 		(uuid "686c7e8a-e3f2-4fa6-bc50-0db9c9f24165")
-	)
-	(wire
-		(pts
-			(xy 63.5 31.75) (xy 63.5 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "69f5c796-8d31-4b2b-b325-177536c1c70f")
 	)
 	(wire
 		(pts
@@ -7755,16 +7577,6 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 54.61) (xy 60.96 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "93a89d32-1c06-414f-8fbb-cc065f7df69e")
-	)
-	(wire
-		(pts
 			(xy 72.39 152.4) (xy 82.55 152.4)
 		)
 		(stroke
@@ -7782,6 +7594,16 @@
 			(type default)
 		)
 		(uuid "949785f8-7167-4e73-bb13-46e974c9d916")
+	)
+	(wire
+		(pts
+			(xy 48.26 39.37) (xy 48.26 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94aa42e3-c971-4738-ad22-9fb1daab5524")
 	)
 	(wire
 		(pts
@@ -7875,16 +7697,6 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 46.99) (xy 73.66 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9fe3cb71-8803-40fb-9383-ae75819ae623")
-	)
-	(wire
-		(pts
 			(xy 186.69 151.13) (xy 186.69 152.4)
 		)
 		(stroke
@@ -7892,16 +7704,6 @@
 			(type default)
 		)
 		(uuid "a07ff63d-98e1-4116-b235-1976b883defa")
-	)
-	(wire
-		(pts
-			(xy 220.98 50.8) (xy 220.98 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a2054989-67f6-4a89-b405-0e4281336c66")
 	)
 	(wire
 		(pts
@@ -7952,16 +7754,6 @@
 			(type default)
 		)
 		(uuid "a3d16a91-35cb-4c62-b04d-3b26e32ad19b")
-	)
-	(wire
-		(pts
-			(xy 31.75 31.75) (xy 36.83 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a438ab34-42f0-430e-9db4-aa8a289b798e")
 	)
 	(wire
 		(pts
@@ -8085,17 +7877,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 31.75) (xy 63.5 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b5a7e786-e8e4-4845-a142-25cb29b51a74")
-	)
-	(wire
-		(pts
-			(xy 60.96 62.23) (xy 64.77 62.23)
+			(xy 55.88 57.15) (xy 59.69 57.15)
 		)
 		(stroke
 			(width 0)
@@ -8125,7 +7907,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 31.75) (xy 31.75 57.15)
+			(xy 36.83 31.75) (xy 36.83 57.15)
 		)
 		(stroke
 			(width 0)
@@ -8152,16 +7934,6 @@
 			(type default)
 		)
 		(uuid "bb13bbc5-15be-46fc-9d28-82ffd895795d")
-	)
-	(wire
-		(pts
-			(xy 34.29 62.23) (xy 35.56 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "be67707e-68ab-4595-b064-c3d02634b56d")
 	)
 	(wire
 		(pts
@@ -8385,7 +8157,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 67.31) (xy 48.26 68.58)
+			(xy 48.26 67.31) (xy 48.26 64.77)
 		)
 		(stroke
 			(width 0)
@@ -8425,13 +8197,13 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 45.72) (xy 234.95 45.72)
+			(xy 48.26 38.1) (xy 48.26 39.37)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e96b53d5-8577-424c-9fdf-fde145ab830f")
+		(uuid "e9399b0b-b6ad-45ce-b31d-05f1438975d5")
 	)
 	(wire
 		(pts
@@ -8658,7 +8430,7 @@
 		(uuid e21d419b-82f0-4e2c-b5a5-0ab77209ea43)
 	)
 	(rectangle
-		(start 187.96 38.1)
+		(start 187.96 61.595)
 		(end 283.845 132.715)
 		(stroke
 			(width 0)
@@ -8903,17 +8675,6 @@
 		)
 		(uuid "4b6c53f7-d39f-4163-aed3-d64bf2e970e9")
 	)
-	(label "IRQn1"
-		(at 219.71 43.18 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4ce9942e-729e-4b00-8fb7-65d19d1ac4d1")
-	)
 	(label "I2C_SCK"
 		(at 104.14 92.71 0)
 		(fields_autoplaced yes)
@@ -9024,17 +8785,6 @@
 		)
 		(uuid "86a16d89-943b-46ca-bbf0-017caf18cd7e")
 	)
-	(label "I2C_SCK"
-		(at 223.52 53.34 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "87924bf3-ad5a-4e6b-8412-7973f2f20071")
-	)
 	(label "IRQn2"
 		(at 242.57 72.39 0)
 		(fields_autoplaced yes)
@@ -9045,17 +8795,6 @@
 			(justify left bottom)
 		)
 		(uuid "88735861-de67-494a-8b83-e6e3553e90fc")
-	)
-	(label "I2C_SDA"
-		(at 219.71 45.72 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "9468ed21-c917-489c-8e98-58de1ef64e56")
 	)
 	(label "I2C_SCK"
 		(at 247.65 118.11 0)
@@ -9157,85 +8896,6 @@
 		(uuid "f5216271-1d72-412d-90da-0e97ef1ba7fc")
 	)
 	(symbol
-		(lib_id "Regulator_Switching:LM2576HVS-3.3")
-		(at 48.26 59.69 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0404b0e7-1c06-40ab-bfb1-666cdf6c61bc")
-		(property "Reference" "U1"
-			(at 48.26 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LM2576HVS-3.3"
-			(at 48.26 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:TO-263-5_TabPin3"
-			(at 48.26 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2576.pdf"
-			(at 48.26 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "3.3V, 3A, SIMPLE SWITCHER® Step-Down Voltage Regulator, High Voltage Input, TO-263"
-			(at 48.26 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "5b940e39-da3c-484e-b999-3de3f2d0a042")
-		)
-		(pin "1"
-			(uuid "1543d6e0-ea3b-463d-8838-1184e2a9a0be")
-		)
-		(pin "3"
-			(uuid "3e0ad0b2-2879-4f00-94df-66c9f3a367c3")
-		)
-		(pin "2"
-			(uuid "d3dfd8f4-4734-46f5-8951-e2e89a737b86")
-		)
-		(pin "5"
-			(uuid "22ce6644-f254-4594-a2ed-c070fe3f0dee")
-		)
-		(instances
-			(project "microfluidics-chip"
-				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 133.35 187.96 0)
 		(unit 1)
@@ -9293,7 +8953,7 @@
 			(uuid "59c7082e-2440-4c42-92fb-d4a1a7c8b50d")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR019")
 					(unit 1)
@@ -9363,7 +9023,7 @@
 			(uuid "833a7d1e-fb22-4245-9bb5-34e9d8b4b9f4")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "C16")
 					(unit 1)
@@ -9429,7 +9089,7 @@
 			(uuid "53c89639-0a6b-470c-b4c5-b92761ffb60b")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR01")
 					(unit 1)
@@ -9495,7 +9155,7 @@
 			(uuid "1e965e86-a0bf-4f23-a804-c854e4b74b5f")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR039")
 					(unit 1)
@@ -9562,74 +9222,9 @@
 			(uuid "6092125a-5948-492f-86f7-ed0832e8a611")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR047")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 35.56 39.37 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0e1cf693-4115-4177-9ff0-2f25102cda0f")
-		(property "Reference" "#PWR027"
-			(at 35.56 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 34.29 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 35.56 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 35.56 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 35.56 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c3896c8c-161c-49bc-9e9d-9c4317ed1a6d")
-		)
-		(instances
-			(project "microfluidics-chip"
-				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
-					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -9836,7 +9431,7 @@
 			(uuid "413cdebf-55d4-4911-93b4-4c3cb9af3430")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "U6")
 					(unit 1)
@@ -9925,7 +9520,7 @@
 			(uuid "bb611dc9-e91d-47ca-9e1c-7c47497fb3de")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "J1")
 					(unit 1)
@@ -9990,7 +9585,7 @@
 			(uuid "c489c4a4-b181-4fcb-b3c5-ed4ffab11755")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR04")
 					(unit 1)
@@ -10060,7 +9655,7 @@
 			(uuid "8d30683c-d01f-4b73-a226-f8b197bf3f18")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "C24")
 					(unit 1)
@@ -10125,7 +9720,7 @@
 			(uuid "9cf84d81-fd6d-472e-93ad-3127b6894169")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR042")
 					(unit 1)
@@ -10191,74 +9786,9 @@
 			(uuid "0b61a093-49c1-435b-833e-30f37ed2c91f")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR028")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 220.98 57.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1fce5c8c-6a60-4863-b5e4-f4d1a9aeb33c")
-		(property "Reference" "#PWR015"
-			(at 220.98 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 220.98 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 220.98 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 220.98 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 220.98 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9e26399e-7452-4004-84a5-05879b3b6b49")
-		)
-		(instances
-			(project "microfluidics-chip"
-				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
-					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -10322,7 +9852,7 @@
 			(uuid "771f8b05-1afc-4e22-aef0-136f5daf3d64")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR012")
 					(unit 1)
@@ -10388,141 +9918,9 @@
 			(uuid "72d650d5-1138-47e6-872b-2d385d385231")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR041")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 76.2 21.59 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "24a59543-6a5a-4941-b6a1-4bff122d948d")
-		(property "Reference" "#PWR029"
-			(at 76.2 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 76.2 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 76.2 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 76.2 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 76.2 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3f61b1c2-c418-4075-aa0e-7843aa3b8fb9")
-		)
-		(instances
-			(project "microfluidics-chip"
-				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
-					(reference "#PWR029")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 232.41 58.42 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "29b1e203-7221-459e-9908-8c1c474c2074")
-		(property "Reference" "#PWR037"
-			(at 226.06 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 228.6 58.4199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 232.41 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 232.41 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 232.41 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cff0199d-e169-43aa-b4d3-bd52a58062c9")
-		)
-		(instances
-			(project "microfluidics-chip"
-				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
-					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -10632,7 +10030,7 @@
 			(uuid "a7902bc9-5d87-4a64-98e6-b23c059a38a9")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "J18")
 					(unit 1)
@@ -10642,7 +10040,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 64.77 62.23 0)
+		(at 59.69 57.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10651,7 +10049,7 @@
 		(fields_autoplaced yes)
 		(uuid "327d6ac3-bfba-438c-8ea6-4c15d8a9ee7f")
 		(property "Reference" "#PWR023"
-			(at 64.77 66.04 0)
+			(at 59.69 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10660,7 +10058,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 64.77 57.15 0)
+			(at 59.69 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10668,7 +10066,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 64.77 62.23 0)
+			(at 59.69 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10677,7 +10075,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 62.23 0)
+			(at 59.69 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10686,7 +10084,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 64.77 62.23 0)
+			(at 59.69 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10698,7 +10096,7 @@
 			(uuid "fd5e0cff-299c-498b-8674-8ffbb58cacd2")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR023")
 					(unit 1)
@@ -10787,7 +10185,7 @@
 			(uuid "bbed6a71-fa19-439e-94f8-c99e94eb7615")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "J2")
 					(unit 1)
@@ -10855,7 +10253,7 @@
 			(uuid "502f777a-24b0-49d0-99b9-a9b0a4be7c5b")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "FB2")
 					(unit 1)
@@ -10925,7 +10323,7 @@
 			(uuid "80f9b5e1-9cd7-46e6-ac92-d298d85b2ed0")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "C22")
 					(unit 1)
@@ -10992,7 +10390,7 @@
 			(uuid "2c1caa5d-b9df-4809-9a13-93dc5157ca2c")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR045")
 					(unit 1)
@@ -11068,7 +10466,7 @@
 			(uuid "d2d1c539-73bc-4fa6-b304-948e154132e0")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "J5")
 					(unit 1)
@@ -11133,7 +10531,7 @@
 			(uuid "6526320e-eeab-43f2-914a-6768547842a6")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR08")
 					(unit 1)
@@ -11214,79 +10612,9 @@
 			(uuid "7fe2d17f-8f91-486e-9cfe-1e73d3d7d535")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "J15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 60.96 50.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4bc14e7c-95fc-4eb6-b575-1c4f1c7edd36")
-		(property "Reference" "C15"
-			(at 64.77 49.5299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 64.77 52.0699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 61.9252 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 60.96 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 60.96 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "722fa562-9be2-4593-8dff-0160e7191dc1")
-		)
-		(pin "2"
-			(uuid "acb54bd4-ddf8-4090-9011-d0a60098a85f")
-		)
-		(instances
-			(project "microfluidics-chip"
-				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
-					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -11351,75 +10679,9 @@
 			(uuid "28d4877a-dcb0-4b76-a5a7-a1063ba2982d")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "C1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 34.29 63.5 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5307b19a-6fe0-4aa2-9167-f7091f9361d1")
-		(property "Reference" "#PWR026"
-			(at 34.29 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 34.29 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 34.29 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 34.29 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 34.29 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "159a4fe7-1f43-409c-be31-efc1b3328571")
-		)
-		(instances
-			(project "microfluidics-chip"
-				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
-					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -11485,7 +10747,7 @@
 			(uuid "1c5172cb-907a-4e1f-ba69-762e4b7aa50c")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "C14")
 					(unit 1)
@@ -11550,7 +10812,7 @@
 			(uuid "ac9db275-ac90-43fa-8955-b212fe4532be")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR06")
 					(unit 1)
@@ -11677,7 +10939,7 @@
 			(uuid "b77eec0a-ee31-41fb-b2b0-9a90398020df")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "J13")
 					(unit 1)
@@ -11744,7 +11006,7 @@
 			(uuid "67e55f7c-7b6d-453d-9949-32f93dd76b4b")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR09")
 					(unit 1)
@@ -11812,7 +11074,7 @@
 			(uuid "eff1da74-4083-46fd-8798-5974207a576d")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "PE1")
 					(unit 1)
@@ -11878,7 +11140,7 @@
 			(uuid "6ec37bd8-7d30-4dcb-82f1-1ff5db538fb9")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR017")
 					(unit 1)
@@ -11944,7 +11206,7 @@
 			(uuid "057a64e8-2a89-4238-8fcf-a44243d05d53")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR05")
 					(unit 1)
@@ -12010,7 +11272,7 @@
 			(uuid "064bc83c-fd49-4c51-8bc1-9bca51fe993f")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR031")
 					(unit 1)
@@ -12020,7 +11282,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 48.26 43.18 0)
+		(at 48.26 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12028,7 +11290,7 @@
 		(dnp no)
 		(uuid "689150f8-5ada-49cd-8e79-b8741505c286")
 		(property "Reference" "#PWR030"
-			(at 48.26 49.53 0)
+			(at 48.26 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12037,7 +11299,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 48.26 46.99 0)
+			(at 48.26 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12045,7 +11307,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 48.26 43.18 0)
+			(at 48.26 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12054,7 +11316,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 48.26 43.18 0)
+			(at 48.26 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12063,7 +11325,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 48.26 43.18 0)
+			(at 48.26 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12075,7 +11337,7 @@
 			(uuid "57fef524-b234-4613-b815-6d9c0c12f6ef")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR030")
 					(unit 1)
@@ -12140,7 +11402,7 @@
 			(uuid "9ddb9bd9-4284-4425-9b00-803854df48d9")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR038")
 					(unit 1)
@@ -12230,7 +11492,7 @@
 			(uuid "e247ac72-7c58-4e4e-93cd-3795f7d09646")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "J3")
 					(unit 1)
@@ -12296,7 +11558,7 @@
 			(uuid "1daecca9-fe32-4cf7-aa76-18f499b859ca")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR035")
 					(unit 1)
@@ -12361,7 +11623,7 @@
 			(uuid "d24a5495-7cc0-4a35-9a91-974a202d133d")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR025")
 					(unit 1)
@@ -12435,7 +11697,7 @@
 			(uuid "f8a68b12-2f42-4996-851b-f40ba5bf7fc0")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "Q3")
 					(unit 1)
@@ -12501,7 +11763,7 @@
 			(uuid "408cd531-f569-43cd-9eb8-a02299b2ab6b")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR010")
 					(unit 1)
@@ -12572,7 +11834,7 @@
 			(uuid "049b22b0-8b44-4021-925d-1f962815c87e")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "SW2")
 					(unit 1)
@@ -12640,7 +11902,7 @@
 			(uuid "c80ab79c-79d9-46df-9cf1-f70672fc18a9")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "D2")
 					(unit 1)
@@ -12767,7 +12029,7 @@
 			(uuid "04b99fad-38d4-447c-b86f-da45913e67cc")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "J8")
 					(unit 1)
@@ -12777,7 +12039,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 67.31 36.83 0)
+		(at 60.96 31.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12785,7 +12047,7 @@
 		(dnp no)
 		(uuid "90964bb0-73be-4981-ad35-722c78a857a2")
 		(property "Reference" "#PWR022"
-			(at 67.31 40.64 0)
+			(at 60.96 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12794,7 +12056,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 67.31 31.75 0)
+			(at 60.96 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12802,7 +12064,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 67.31 36.83 0)
+			(at 60.96 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12811,7 +12073,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 67.31 36.83 0)
+			(at 60.96 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12820,7 +12082,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 67.31 36.83 0)
+			(at 60.96 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12832,7 +12094,7 @@
 			(uuid "c177d5cb-16c9-4632-840a-3e195fa9df5d")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR022")
 					(unit 1)
@@ -12898,7 +12160,7 @@
 			(uuid "23618380-116f-44b4-b2e9-14f81557c049")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR03")
 					(unit 1)
@@ -12968,7 +12230,7 @@
 			(uuid "e42de2e2-6e1b-465b-a33b-4811a11701fa")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "J16")
 					(unit 1)
@@ -13034,7 +12296,7 @@
 			(uuid "926376eb-ad89-4ed8-b292-623aa6edaf7c")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR011")
 					(unit 1)
@@ -13160,9 +12422,81 @@
 			(uuid "17e553c2-3ecd-4997-bd38-5d6a98d0a8e1")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "J10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Linear:LM1084-3.3")
+		(at 48.26 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a0342c96-e55b-4976-a261-813f68e9313e")
+		(property "Reference" "U3"
+			(at 48.26 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LM1084-3.3"
+			(at 48.26 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "lm1084IT_regulator:T03B"
+			(at 48.26 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm1084.pdf"
+			(at 48.26 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "5A 27V Linear Regulator, Fixed Output 3.3V, TO-220/TO-263"
+			(at 48.26 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "5a6cde84-13f4-4605-b386-a78a860538d8")
+		)
+		(pin "2"
+			(uuid "31fc4c7a-e61d-4eba-8f04-c4b8c674b62e")
+		)
+		(pin "1"
+			(uuid "a65ff3e7-5264-41b6-a3cd-dbcec0ba9ebe")
+		)
+		(instances
+			(project "ion-concentration-biomodulator"
+				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -13227,7 +12561,7 @@
 			(uuid "98c74cc5-0c6a-40e7-ab5f-d0256416e3c6")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR016")
 					(unit 1)
@@ -13293,7 +12627,7 @@
 			(uuid "9b6db325-4357-4173-8a2c-bf45fd086fae")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR020")
 					(unit 1)
@@ -13359,7 +12693,7 @@
 			(uuid "93b3363a-3fd7-45d8-bb97-498379f252e4")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR032")
 					(unit 1)
@@ -13425,7 +12759,7 @@
 			(uuid "d2cb99e3-ab2f-44f9-a941-86e27af29ff4")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR033")
 					(unit 1)
@@ -13490,7 +12824,7 @@
 			(uuid "1b05f922-e4ce-41bc-b813-a93acdcb7f4e")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR036")
 					(unit 1)
@@ -13555,7 +12889,7 @@
 			(uuid "295139c5-84ce-4b41-aa9b-73ccb6a0c6ed")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR02")
 					(unit 1)
@@ -13623,7 +12957,7 @@
 			(uuid "75bcbd61-4e54-410a-9847-8af88a209529")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "R2")
 					(unit 1)
@@ -13712,7 +13046,7 @@
 			(uuid "ed8d7613-76b5-44bc-886f-16c54d3c280c")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "J4")
 					(unit 1)
@@ -13781,7 +13115,7 @@
 			(uuid "e21dc700-b380-4c66-89dc-69cd9fdea267")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "R3")
 					(unit 1)
@@ -13908,7 +13242,7 @@
 			(uuid "58333cb0-bbaa-466a-9d48-9e6cb6a57e2d")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "J14")
 					(unit 1)
@@ -13973,7 +13307,7 @@
 			(uuid "06947bc7-dc1c-495a-8b79-5362a89b6d1c")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR044")
 					(unit 1)
@@ -14076,74 +13410,9 @@
 			(uuid "54e25c29-18fb-45e5-84a7-14920f18f494")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "J12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 73.66 46.99 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "bcd4623f-980d-47ae-82c3-54605bbacd58")
-		(property "Reference" "#PWR034"
-			(at 73.66 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 73.66 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 73.66 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 73.66 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 73.66 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "086b85d3-af54-467e-96bd-3968a4c0e41b")
-		)
-		(instances
-			(project "microfluidics-chip"
-				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
-					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -14208,7 +13477,7 @@
 			(uuid "575b8f3a-c1e6-486f-aac3-f925ec42a8c6")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR040")
 					(unit 1)
@@ -14278,7 +13547,7 @@
 			(uuid "ebc66219-da06-427f-8db8-f64765e5b2f7")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "C23")
 					(unit 1)
@@ -14344,7 +13613,7 @@
 			(uuid "efa18436-b5f3-43eb-8646-09ca907453bb")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR018")
 					(unit 1)
@@ -14414,7 +13683,7 @@
 			(uuid "ab38717f-15d5-4443-84b6-ad6755205de6")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "C21")
 					(unit 1)
@@ -14423,44 +13692,43 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Switching:LM2576HVS-5")
-		(at 49.53 34.29 0)
+		(lib_id "Regulator_Linear:LM1084-5.0")
+		(at 48.26 31.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c6b4a717-919f-4e29-9552-a6773ffd62b6")
-		(property "Reference" "U4"
-			(at 49.53 24.13 0)
+		(uuid "c7620d82-a084-4761-b8e8-2049df5243ba")
+		(property "Reference" "U2"
+			(at 48.26 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "LM2576HVS-5"
-			(at 49.53 26.67 0)
+		(property "Value" "LM1084-5.0"
+			(at 48.26 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TO-263-5_TabPin3"
-			(at 49.53 40.64 0)
+		(property "Footprint" "lm1084IT_regulator:T03B"
+			(at 48.26 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
-				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2576.pdf"
-			(at 49.53 34.29 0)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm1084.pdf"
+			(at 48.26 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14468,34 +13736,28 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "5V 3A, SIMPLE SWITCHER® Step-Down Voltage Regulator, High Voltage Input, TO-263"
-			(at 49.53 34.29 0)
+		(property "Description" "5A 27V Linear Regulator, Fixed Output 5.0V, TO-220/TO-263"
+			(at 48.26 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "4"
-			(uuid "5f7d406e-fba7-4d93-9f86-86bf6494c7f6")
-		)
-		(pin "1"
-			(uuid "d5101a3d-5aba-439f-aa37-8d46e0a67c2b")
-		)
-		(pin "5"
-			(uuid "53567092-92ef-475e-93bc-5a2d9fedeed0")
-		)
-		(pin "2"
-			(uuid "874341d4-b0e5-4ad3-92f6-182867699808")
 		)
 		(pin "3"
-			(uuid "b591d7ab-b320-4deb-b7f8-72c924e9fd48")
+			(uuid "1654e23b-eb34-4b86-a501-d6859e2ab2fb")
+		)
+		(pin "2"
+			(uuid "e570c37c-6c67-4ff4-b224-304ead9b4b63")
+		)
+		(pin "1"
+			(uuid "53604f77-ed54-4081-8376-38ee5337ec75")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
-					(reference "U4")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -14503,7 +13765,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 48.26 68.58 0)
+		(at 48.26 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14512,7 +13774,7 @@
 		(fields_autoplaced yes)
 		(uuid "ca606938-88ed-473b-b568-bead9573fef7")
 		(property "Reference" "#PWR024"
-			(at 48.26 74.93 0)
+			(at 48.26 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14521,7 +13783,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 48.26 73.66 0)
+			(at 48.26 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14529,7 +13791,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 48.26 68.58 0)
+			(at 48.26 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14538,7 +13800,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 48.26 68.58 0)
+			(at 48.26 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14547,7 +13809,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 48.26 68.58 0)
+			(at 48.26 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14559,145 +13821,9 @@
 			(uuid "740d40e7-3b06-41dc-9c12-d780a9cdc70b")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR024")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 63.5 26.67 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cd2e7b7f-518b-4fb2-8a90-d48e9bffad8f")
-		(property "Reference" "C11"
-			(at 67.31 25.3999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1uF"
-			(at 67.31 27.9399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 64.4652 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 63.5 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 63.5 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "892cc163-eb40-4367-958e-6e7799056cb9")
-		)
-		(pin "1"
-			(uuid "e9556b54-ac6f-4da2-bfac-c30b1dd35d66")
-		)
-		(instances
-			(project "microfluidics-chip"
-				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
-					(reference "C11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 214.63 48.26 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cd9b8a5d-815c-4952-9e11-94c252c07f43")
-		(property "Reference" "#PWR013"
-			(at 214.63 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 214.63 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 214.63 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 214.63 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 214.63 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "aba5f5f2-aad4-4c03-b7b7-d6a30763f581")
-		)
-		(instances
-			(project "microfluidics-chip"
-				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
-					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -14769,98 +13895,9 @@
 			(uuid "411f2fd6-9326-49f1-a1ad-955ce884dd9f")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "Q1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "co2_sensor_molex_footprint:532610671")
-		(at 234.95 43.18 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d40d336b-3812-4587-bd52-0095fce95996")
-		(property "Reference" "J6"
-			(at 248.92 50.7999 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "532610671"
-			(at 249.174 53.594 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "co2_sensor_footprint:CON_532610671"
-			(at 234.95 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "532610671"
-			(at 234.95 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 234.95 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5ef18562-f7bd-41eb-9fc5-8c55ba41574f")
-		)
-		(pin "8"
-			(uuid "5b49ad23-3761-46ac-8a56-70e695f5e325")
-		)
-		(pin "7"
-			(uuid "eccb1c10-431f-4fcd-8159-164390374264")
-		)
-		(pin "2"
-			(uuid "79f37628-c7af-4052-9576-8c44e1862050")
-		)
-		(pin "3"
-			(uuid "65ee187e-9f54-4c36-afcd-55d55061fa1e")
-		)
-		(pin "5"
-			(uuid "5f143e53-e541-4064-986b-8e8293f268b2")
-		)
-		(pin "4"
-			(uuid "251e4668-bbb9-4530-8309-4563c1ebadd3")
-		)
-		(pin "6"
-			(uuid "4cce262a-37bc-4cd8-99d9-06ed4e47fc8a")
-		)
-		(instances
-			(project "microfluidics-chip"
-				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
-					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -14926,7 +13963,7 @@
 			(uuid "fd565c0c-c3e4-4c0d-9dc9-7e04f8c139c8")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "C2")
 					(unit 1)
@@ -14992,7 +14029,7 @@
 			(uuid "6b21c06e-c8f8-4ae5-9f0d-d19efc52fcfb")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR07")
 					(unit 1)
@@ -15097,7 +14134,7 @@
 			(uuid "97301839-3ba9-4a68-b956-ecc6b7ee8bee")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "J11")
 					(unit 1)
@@ -15163,7 +14200,7 @@
 			(uuid "1eb969cc-6a86-4773-a149-ab53b9b56ae0")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR021")
 					(unit 1)
@@ -15229,7 +14266,7 @@
 			(uuid "48af44ef-1696-4754-a1a6-7e03eb0a85ac")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR043")
 					(unit 1)
@@ -15299,7 +14336,7 @@
 			(uuid "47a60243-3f25-4e56-b1b3-ea3438ef0c5f")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "C18")
 					(unit 1)
@@ -15368,7 +14405,7 @@
 			(uuid "6d0b7c20-56ed-4505-aa7d-a01a8493eb09")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "R1")
 					(unit 1)
@@ -15438,7 +14475,7 @@
 			(uuid "391ecebf-74a5-4073-9051-35a2b195f75b")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "C25")
 					(unit 1)
@@ -15505,7 +14542,7 @@
 			(uuid "ee85e50a-e87d-417a-8329-aeec0ebedb94")
 		)
 		(instances
-			(project "microfluidics-chip"
+			(project "ion-concentration-biomodulator"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR014")
 					(unit 1)
