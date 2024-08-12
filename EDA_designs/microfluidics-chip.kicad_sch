@@ -6236,6 +6236,12 @@
 		(uuid "8d55cfe6-6141-4d47-9c7b-faddf723a15c")
 	)
 	(junction
+		(at 234.95 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "90134437-57ae-497a-8c5b-c7ac7e80fdad")
+	)
+	(junction
 		(at 31.75 24.13)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6426,6 +6432,10 @@
 	(no_connect
 		(at 113.03 115.57)
 		(uuid "a053317c-fe91-414c-8fbb-09ecc81d36c1")
+	)
+	(no_connect
+		(at 234.95 55.88)
+		(uuid "a63caa38-291a-417b-a34c-508a58c462a5")
 	)
 	(no_connect
 		(at 255.27 85.09)
@@ -6855,6 +6865,16 @@
 	)
 	(wire
 		(pts
+			(xy 219.71 43.18) (xy 234.95 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23d5fe2b-3929-45b4-a477-5e06c063ac27")
+	)
+	(wire
+		(pts
 			(xy 82.55 152.4) (xy 82.55 146.05)
 		)
 		(stroke
@@ -6995,6 +7015,16 @@
 	)
 	(wire
 		(pts
+			(xy 214.63 48.26) (xy 234.95 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "353e87e9-0df5-4380-adfd-3cb4bb7b627e")
+	)
+	(wire
+		(pts
 			(xy 201.93 152.4) (xy 200.66 152.4)
 		)
 		(stroke
@@ -7112,6 +7142,26 @@
 			(type default)
 		)
 		(uuid "4087a840-178d-4d94-bec4-6384742f9b6b")
+	)
+	(wire
+		(pts
+			(xy 223.52 53.34) (xy 234.95 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "416f3440-0e5c-4c89-9389-651890dd2a47")
+	)
+	(wire
+		(pts
+			(xy 220.98 50.8) (xy 234.95 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42f211b4-b39b-4fb9-b5c2-7d4b7fad1f37")
 	)
 	(wire
 		(pts
@@ -7325,6 +7375,16 @@
 	)
 	(wire
 		(pts
+			(xy 234.95 58.42) (xy 234.95 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59af580f-4508-41d1-b2da-f3a86addec42")
+	)
+	(wire
+		(pts
 			(xy 45.72 190.5) (xy 21.59 190.5)
 		)
 		(stroke
@@ -7372,6 +7432,16 @@
 			(type default)
 		)
 		(uuid "673fb568-0889-4d10-9441-f3b3e1d61d6a")
+	)
+	(wire
+		(pts
+			(xy 232.41 58.42) (xy 234.95 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67a04879-5487-444f-af29-2d3718b97b74")
 	)
 	(wire
 		(pts
@@ -7822,6 +7892,16 @@
 			(type default)
 		)
 		(uuid "a07ff63d-98e1-4116-b235-1976b883defa")
+	)
+	(wire
+		(pts
+			(xy 220.98 50.8) (xy 220.98 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2054989-67f6-4a89-b405-0e4281336c66")
 	)
 	(wire
 		(pts
@@ -8345,6 +8425,16 @@
 	)
 	(wire
 		(pts
+			(xy 219.71 45.72) (xy 234.95 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e96b53d5-8577-424c-9fdf-fde145ab830f")
+	)
+	(wire
+		(pts
 			(xy 72.39 187.96) (xy 104.14 187.96)
 		)
 		(stroke
@@ -8568,7 +8658,7 @@
 		(uuid e21d419b-82f0-4e2c-b5a5-0ab77209ea43)
 	)
 	(rectangle
-		(start 187.96 60.96)
+		(start 187.96 38.1)
 		(end 283.845 132.715)
 		(stroke
 			(width 0)
@@ -8813,6 +8903,17 @@
 		)
 		(uuid "4b6c53f7-d39f-4163-aed3-d64bf2e970e9")
 	)
+	(label "IRQn1"
+		(at 219.71 43.18 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4ce9942e-729e-4b00-8fb7-65d19d1ac4d1")
+	)
 	(label "I2C_SCK"
 		(at 104.14 92.71 0)
 		(fields_autoplaced yes)
@@ -8923,6 +9024,17 @@
 		)
 		(uuid "86a16d89-943b-46ca-bbf0-017caf18cd7e")
 	)
+	(label "I2C_SCK"
+		(at 223.52 53.34 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "87924bf3-ad5a-4e6b-8412-7973f2f20071")
+	)
 	(label "IRQn2"
 		(at 242.57 72.39 0)
 		(fields_autoplaced yes)
@@ -8933,6 +9045,17 @@
 			(justify left bottom)
 		)
 		(uuid "88735861-de67-494a-8b83-e6e3553e90fc")
+	)
+	(label "I2C_SDA"
+		(at 219.71 45.72 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9468ed21-c917-489c-8e98-58de1ef64e56")
 	)
 	(label "I2C_SCK"
 		(at 247.65 118.11 0)
@@ -10077,6 +10200,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 220.98 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1fce5c8c-6a60-4863-b5e4-f4d1a9aeb33c")
+		(property "Reference" "#PWR015"
+			(at 220.98 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 220.98 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 220.98 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9e26399e-7452-4004-84a5-05879b3b6b49")
+		)
+		(instances
+			(project "microfluidics-chip"
+				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 186.69 151.13 0)
 		(unit 1)
@@ -10268,6 +10456,73 @@
 			(project "microfluidics-chip"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 232.41 58.42 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "29b1e203-7221-459e-9908-8c1c474c2074")
+		(property "Reference" "#PWR037"
+			(at 226.06 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 228.6 58.4199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 232.41 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 232.41 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 232.41 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cff0199d-e169-43aa-b4d3-bd52a58062c9")
+		)
+		(instances
+			(project "microfluidics-chip"
+				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -14383,6 +14638,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 214.63 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cd9b8a5d-815c-4952-9e11-94c252c07f43")
+		(property "Reference" "#PWR013"
+			(at 214.63 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 214.63 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 214.63 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 214.63 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 214.63 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "aba5f5f2-aad4-4c03-b7b7-d6a30763f581")
+		)
+		(instances
+			(project "microfluidics-chip"
+				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_FET:NDT3055L")
 		(at 247.65 149.86 270)
 		(unit 1)
@@ -14451,6 +14772,95 @@
 			(project "microfluidics-chip"
 				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
 					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "co2_sensor_molex_footprint:532610671")
+		(at 234.95 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d40d336b-3812-4587-bd52-0095fce95996")
+		(property "Reference" "J6"
+			(at 248.92 50.7999 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "532610671"
+			(at 249.174 53.594 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "co2_sensor_footprint:CON_532610671"
+			(at 234.95 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "532610671"
+			(at 234.95 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 234.95 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5ef18562-f7bd-41eb-9fc5-8c55ba41574f")
+		)
+		(pin "8"
+			(uuid "5b49ad23-3761-46ac-8a56-70e695f5e325")
+		)
+		(pin "7"
+			(uuid "eccb1c10-431f-4fcd-8159-164390374264")
+		)
+		(pin "2"
+			(uuid "79f37628-c7af-4052-9576-8c44e1862050")
+		)
+		(pin "3"
+			(uuid "65ee187e-9f54-4c36-afcd-55d55061fa1e")
+		)
+		(pin "5"
+			(uuid "5f143e53-e541-4064-986b-8e8293f268b2")
+		)
+		(pin "4"
+			(uuid "251e4668-bbb9-4530-8309-4563c1ebadd3")
+		)
+		(pin "6"
+			(uuid "4cce262a-37bc-4cd8-99d9-06ed4e47fc8a")
+		)
+		(instances
+			(project "microfluidics-chip"
+				(path "/bae20e05-e1d7-4036-8683-639bb0f1fbc7"
+					(reference "J6")
 					(unit 1)
 				)
 			)
